@@ -6,43 +6,43 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     ui->setupUi(this);
     m_server = new QTcpServer();
 
-    connect(timer, SIGNAL(timeout()), this, SLOT(actualizarEstado()));
-    connect(ui->tarjeta01, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta02, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta03, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta04, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta05, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta06, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta07, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta08, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta09, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta10, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta11, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta12, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta13, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta14, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta15, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta16, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta17, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta18, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta19, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta20, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta21, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta22, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta23, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta24, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta25, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta26, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta27, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta28, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta29, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta30, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta31, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta32, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta33, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta34, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta35, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
-    connect(ui->tarjeta36, SIGNAL(clicked()), this, SLOT(tarjetaDescubierta()));
+    connect(timer, SIGNAL(timeout()), this, SLOT(actualizar_estado()));
+    connect(ui->tarjeta01, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta02, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta03, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta04, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta05, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta06, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta07, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta08, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta09, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta10, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta11, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta12, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta13, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta14, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta15, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta16, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta17, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta18, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta19, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta20, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta21, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta22, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta23, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta24, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta25, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta26, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta27, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta28, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta29, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta30, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta31, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta32, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta33, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta34, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta35, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
+    connect(ui->tarjeta36, SIGNAL(clicked()), this, SLOT(tarjeta_descubierta()));
 
     iniciar_juego();
 
@@ -429,7 +429,7 @@ void MainWindow::resultado_parcial()//Indica si dos parejas si son iguales o dif
     }
     else{
         ui->frame->setEnabled(false);
-        QTimer::singleShot(1000, this, SLOT(reiniciarTarjetas()));
+        QTimer::singleShot(1000, this, SLOT(reiniciar_tarjetas()));
     }
 }
 
@@ -480,7 +480,7 @@ void MainWindow::repartir(QVector<QString> &tarjetas, QHash<QString, QString> &r
      * Restricción:No se pueden añadir mas imagenes ni tarjetas
      * Salida:Concordancia entre las imagenes y las tarjetas*/
     auto iterador=tarjetas.begin();
-    for (int i=1; i<=6; i++){
+    for (int i=1; i<=18; i++){
         QString file_name=QString::number(i)+".png";
         reparto[(*iterador)]=file_name;
         iterador++;
